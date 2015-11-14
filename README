@@ -1,3 +1,8 @@
+Startup:
+1. pip install -r requirements.txt
+2. chmod +x run_server.sh
+3. ./run_server.sh
+
 1. Login
 https://developers.facebook.com/docs/javascript/examples#login
 
