@@ -1,0 +1,14 @@
+1. Login
+https://developers.facebook.com/docs/javascript/examples#login
+
+2. Retrieve current profile photo
+https://developers.facebook.com/docs/graph-api/reference/user/picture/
+
+3. Overlay lebanese flag
+some javascript + canvas???
+
+4. upload photo
+https://developers.facebook.com/docs/graph-api/reference/v2.5/album/photos
+
+(can’t be done programatically afaict):
+5. redirect user to page allowing them to make photo their profile photo: i.e.: https://www.facebook.com/photo.php?fbid=10153431767839877&makeprofile=1
