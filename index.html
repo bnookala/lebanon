@@ -2,37 +2,31 @@
 <html>
 <head>
   <meta charset="UTF-8" />
-  <title>Hello React!</title>
-  <script src="js/react.min.js"></script>
-  <script src="js/react-dom.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="//connect.facebook.net/en_US/sdk.js"></script>
-
-  <script src="js/main.js"></script>
+  <title>lebanon - show your support for another cause</title>
+  <link href="css/index.css" rel="stylesheet">
 </head>
-<body>
-  <img id="profilePhoto">
-  <div id="example"></div>
 
-  <script type="text/babel">
-  ReactDOM.render(
-    <h1>Hello, worlds!</h1>,
-    document.getElementById('example')
-  );
-  </script>
+<body>
+  <div id="main">
+    <div class="wrap">
+      <div id="primary">
+        <h3>Show your support for Lebanon, because Facebook won't let you.</h3>
+
+        <fb:login-button scope="publish_actions,public_profile,email" onlogin="window.lebanonStart();">
+        </fb:login-button>
+
+        <img id="profilePhoto">
+      </div>
+    </div>
+  </div>
 
 </body>
 
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
-<fb:login-button scope="public_profile,email" onlogin="window.lebanonStart();">
-</fb:login-button>
+<script src="js/react.min.js"></script>
+<script src="js/react-dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//connect.facebook.net/en_US/sdk.js"></script>
 
-<div id="status">
-</div>
-
+<script src="js/main.js"></script>
 </html>
